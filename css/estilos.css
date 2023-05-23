@@ -1,0 +1,333 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+    --pastel-azul: #B2EBF2;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header{
+    background-color: var(--primario);
+    padding: 1rem;
+  }
+  
+  nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li{
+    margin-right: 1rem;
+  }
+  
+  nav ul li a{
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover{
+    background-color: var(--pastel-azul);
+  }
+  
+  nav ul li a.active{
+    background-color: var(--pastel-azul);
+  }
+  
+  main{
+    padding: 2rem;
+  }
+  
+  h1{
+    color: var(--primario);
+    font-size: 2.5rem;
+  }
+  
+  p{
+    color: var(--oscuro);
+    font-size: 1.2rem;
+  }
+  
+  .footer{
+    background-color: var(--primario);
+      padding: 1rem;
+      text-align: center;
+      color: var(--blanco);
+      bottom: 0;
+  }
+
+  /* ... Estilos anteriores ... */
+
+  #productos{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #productos h2{
+    text-align: center;
+  }
+  
+  .producto{
+    width: 30%;
+    margin: 1.5rem;
+    padding: 1.0rem;
+    border-radius: 0.5rem;
+    background-color: #f2f5f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  @media (max-width: 768px){
+    .producto {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 576px){
+    .producto {
+      width: 90%;
+    }
+  }
+  .producto img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  .producto h3{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .producto p{
+    font-size: 1.2rem;
+    color: var(--oscuro);
+    margin-bottom: 1rem;
+  }
+  
+  .agregar-carrito{
+    background-color: var(--pastel-azul);
+    color: var(--blanco);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .agregar-carrito:hover{
+    background-color: var(--oscuro);
+  }
+
+  .boton-carrito{
+    background-color: #98ddca;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+  }
+  
+  .boton-carrito:hover{
+    transform: translateZ(-10px) rotateX(20deg);
+  }
+
+  .navegacion-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--grisClaro);
+    padding: 0.5rem;
+  }
+  
+  .navegacion-principal a{
+    display: block;
+    text-align: center;
+    color: var(--oscuro);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+  }
+  
+  .navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--blanco);
+  }
+
+  .encabezado{
+    background-color: #DFE9F3;
+    padding: 20px;
+    border: 1px solid #DFE9F3;
+  }
+
+  .carrito {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+  }
+  
+  .carrito-enlace img{
+    width: 50px; /* Ajusta el tamaño según tus necesidades */
+  }
+
+  .carrito-enlace {
+    margin-left: auto;
+  }
+
+  body, html {
+    height: 100%;
+  }
+  
+  .contacto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .contacto {
+    background-color: #F9E8E8;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .contacto label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contacto input, .contacto textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #CCC;
+    border-radius: 0.3rem;
+  }
+  
+  .contacto button {
+    background-color: #FFB4C3;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .contacto button:hover {
+    background-color: #FF94AD;
+  }
+
+  #inicio img {
+    display: block;
+    width: 500%;
+    max-width: 1000px;
+    height: auto;
+    margin: 2rem auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  #inicio img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 2rem auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  #nosotros {
+    background-color: #F7E9E9; /* Color de fondo pastel */
+    padding: 20px; /* Espacio interno del cuadro */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .historia, .direccion, .mision, .vision {
+    margin-bottom: 20px; /* Espacio entre cada sección */
+  }
+  
+  .historia h3, .direccion h3, .mision h3, .vision h3 {
+    color: #333; /* Color de título */
+    font-size: 24px; /* Tamaño de letra para los títulos */
+  }
+  
+  .historia p, .direccion p, .mision p, .vision p {
+    color: #666; /* Color de texto */
+    font-size: 18px; /* Tamaño de letra para el texto */
+  }
+
+  #ofertas {
+    background-color: #f7e8df;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #ofertas h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .oferta {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .oferta img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .oferta h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .oferta p {
+    margin-bottom: 10px;
+  }
+  
+  .boton-comprar {
+    display: inline-block;
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .boton-comprar:hover {
+    background-color: #ff6600;
+  }
+
+  .imagen {
+    width: 100%; /* Establece el ancho deseado */
+    height: auto; /* Ajusta la altura automáticamente */
+  }
